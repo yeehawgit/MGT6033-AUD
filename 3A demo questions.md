@@ -3,10 +3,10 @@
 ## Section 1: Loading and Tokenizing Text
 
 1. **(Easy)** Which Python method is commonly used to split a string into tokens based on whitespace?  
-A. split()
-B. partition()
-C. find()
-D. groupby()
+A. split()  
+B. partition()  
+C. find()  
+D. groupby()  
 
 2. **(Medium) Select all that apply:** Which of the following statements about using `word_tokenize` from NLTK are true?  
 A. Handles punctuation more accurately than basic split  
@@ -69,10 +69,10 @@ C. Use Pandas Series to count word frequency
 D. Discard proper nouns entirely
 
 11. **(Hard)** What is a practical pandas method to examine the most frequent non-stop words in a processed corpus?  
-A. groupby()
-B. value_counts()
-C. describe()
-D. get_text()
+A. groupby()  
+B. value_counts()  
+C. describe()  
+D. get_text()  
 
 12. **(Hard) Select all that apply:** When iterating over spaCy `sent` and `word` objects, which of the following practices are recommended for high-quality cleaning?  
 A. Skip sentences that are too short  
@@ -83,10 +83,10 @@ D. Store all tokens as title-case
 ## Section 5: Case Sensitivity and Acronym Preservation
 
 13. **(Hard)** In the acronym-preserving version of the cleaning loop, what check ensures a token is an acronym?  
-A. word.is_upper
-B. word.is_stop
-C. word.is_title
-D. word.text.isnumeric()
+A. word.is_upper  
+B. word.is_stop  
+C. word.is_title  
+D. word.text.isnumeric()  
 
 14. **(Medium)** Why is it necessary to adjust for casing when tallying frequencies of non-stop words?  
 A. To distinguish between singular and plural  
