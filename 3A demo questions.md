@@ -88,7 +88,7 @@ B. word.is_stop
 C. word.is_title  
 D. word.text.isnumeric()  
 
-14. **(Medium)** Why is it necessary to adjust for casing when tallying frequencies of non-stop words?  
+14. **(Medium) Select all that apply:** Why is it necessary to adjust for casing when tallying frequencies of non-stop words?  
 A. To distinguish between singular and plural  
 B. To prevent NLP acronyms from being merged with regular words  
 C. To make word frequency counts case-insensitive for non-acronyms  

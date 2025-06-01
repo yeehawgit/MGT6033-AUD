@@ -72,8 +72,8 @@
 (*3_DemoB5_Sentiment_Analysis_Building_A_Dictionary.txt*)
 
 14. **Correct Answer:** B  
-**Explanation:** Multiple variants (e.g., "accord Number 2") represent the same root in different contexts or dictionary entries.  
-**Verbatim Quote:** "...what it means is you might have ... accord Number 2, accord Number 3 ... for various reasons those words appear multiple times."  
+**Explanation:** Multiple variants (e.g., "ACCORD#2") represent the same root in different contexts or dictionary entries.  
+**Verbatim Quote:** "...what it means is you might have ... ACCORD#2, ACCORD#3 ... for various reasons those words appear multiple times."  
 (*3_DemoB5_Sentiment_Analysis_Building_A_Dictionary.txt*)
 
 15. **Correct Answer:** B  
@@ -104,6 +104,6 @@
 (*3_DemoB6_Sentiment_Analysis_Pattern-Based_Approach.txt*)
 
 20. **Correct Answers:** A, B, C  
-**Explanation:** Sanity-checks, reviewing actual reviews, and merging indices to interpret results are all recommended for NLP analyses.  
+**Explanation:** Visual checks, reviewing actual reviews, and merging indices to interpret results are all recommended for NLP analyses.  
 **Verbatim Quote:** "Always check your data. ...use .head()...see what you get. ...use merging to interpret which review matches."  
 (*3_DemoB7_Measuring_Similarity.txt*)

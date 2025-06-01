@@ -3,13 +3,13 @@
 ## Section 1: Loading and Inspecting News Data
 
 1. **(Easy)** What Python library is used to load the news articles CSV file in the demo?  
-A. numpy  
+A. collections  
 B. pandas  
 C. spaCy  
 D. sklearn  
 
 2. **(Medium)** What is the purpose of calling `news.head()` after loading the CSV?  
-A. To display the last five rows  
+A. To show the last five rows of the DataFrame  
 B. To show the first five rows of the DataFrame  
 C. To count the number of articles  
 D. To print column data types  
@@ -34,11 +34,11 @@ D. To convert all numbers to strings
 
 ## Section 2: Named Entity Recognition with spaCy
 
-6. **(Easy)** What is the main Python package used for Named Entity Recognition (NER) in this demo?  
-A. nltk  
-B. spaCy  
-C. pandas  
-D. re  
+6. **(Easy)** What does NER stand for?  
+A. Named Entity Representation   
+B. Named Entity Recognition  
+C. Noun Expression Recognition  
+D. Named Expression Representation  
 
 7. **(Medium) Select all that apply:** Which steps are required before performing NER on article titles using spaCy?  
 A. Load the spaCy language model  
@@ -46,7 +46,7 @@ B. Pass the text through the model
 C. Convert the DataFrame to a NumPy array  
 D. Tokenize with `split()`  
 
-8. **(Medium)** What type of object is returned when you process a string with a spaCy model (e.g., `nlp(title)`)?
+8. **(Medium)** What type of object is returned when you process a string with a spaCy model (e.g., `nlp(title)`)?  
 A. A list of tokens  
 B. A spaCy Doc object  
 C. A pandas Series  
@@ -81,8 +81,8 @@ D. COLOR
 13. **(Medium)** If a title contains "Apple launches new iPhone," which entities and labels would spaCy most likely assign?  
 A. "Apple" – ORG, "iPhone" – PRODUCT  
 B. "Apple" – PERSON, "iPhone" – GPE  
-C. "iPhone" – ORG  
-D. "Apple" – PRODUCT  
+C. "Apple" - ORG, "iPhone" – GPE  
+D. "Apple" – PRODUCT, "iPhone" – PRODUCT    
 
 14. **(Hard)** Why might different spaCy models yield different NER results on the same text?  
 A. They are trained on different data and have different vocabularies  

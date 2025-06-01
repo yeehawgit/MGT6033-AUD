@@ -26,8 +26,8 @@ news = pd.read_csv('./articles2.csv')" (NER-3C.pdf)
 ## Section 2: Named Entity Recognition with spaCy
 
 6. **Correct Answer:** B  
-**Explanation:** spaCy is the main package for NER in this demo.  
-**Verbatim Quote:** "implementing NER with SpaCy" (NER-3C.pdf)
+**Explanation:** NER is Named Entity Recognition.  
+**Verbatim Quote:** "Named Entity Recognition" (NER-3C.pdf)
 
 7. **Correct Answers:** A, B  
 **Explanation:** You must load the model and process the text with it.  

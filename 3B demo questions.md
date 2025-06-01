@@ -72,7 +72,7 @@ B. Generating new reviews
 C. Removing all adjectives  
 D. Counting the number of sentences only  
 
-12. **(Medium) Select all that apply:** According to the demo, what categories does the General Inquirer sentiment dictionary provide?  
+12. **(Medium) Select all that apply:** According to the demo, what categories does the Harvard General Inquirer Dictionary provide?  
 A. Positive words  
 B. Negative words  
 C. Product IDs  
@@ -84,7 +84,7 @@ B. Filter rows for positive/negative categories
 C. Split on hashes and convert tokens to lowercase  
 D. Convert imported columns to string type  
 
-14. **(Hard)** Why do some words in the sentiment dictionary appear as `"accord Number 2"` or similar variants?  
+14. **(Hard)** Why do some words in the sentiment dictionary appear as `"ACCORD#2"` or similar variants?  
 A. They are synonyms from different languages  
 B. They represent the same root word in multiple categories or meanings  
 C. They are always stop words  
@@ -116,14 +116,14 @@ B. Subjectivity is ignored for all calculations
 C. The result is always 0 or 1  
 D. Only negative polarity is weighted  
 
-19. **(Medium)** Why is it important to convert the tuple output from a custom TextBlob function to columns in the DataFrame?  
+19. **(Medium)** Why did Robbie convert the tuple output from a custom TextBlob function to columns in the DataFrame?  
 A. To facilitate correlation and further analysis  
 B. To enable merging results with review texts  
 C. To avoid redundancy  
 D. To count the most common words  
 
 20. **(Medium) Select all that apply:** Which of the following are recommended as additional steps after calculating sentiment or similarity scores?  
-A. Always check your data with `.head()` or sanity-check  
+A. Always check your data with `.head()` for a visual check 
 B. Investigate the actual review text for extreme values  
 C. Merge indices to make results interpretable  
 D. Ignore any NaN or missing results
