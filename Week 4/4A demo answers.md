@@ -36,7 +36,7 @@
 **Explanation:** A match object evaluates to True if a match is found; otherwise, False.  
 **Verbatim Quote:** “You can use these match objects as Booleans...they can be pretty nice for logic control.” (4_DemoA2-Analyzing-the-Match-Object.txt)
 
-9. **Correct Answers:** A, B, C, D  
+9. **Correct Answers:** D  
 **Explanation:** All these issues can prevent a valid match for Twitter handles, incomplete domains, etc.  
 **Verbatim Quote:** “So those last two, there's something...that indicates they're not true email addresses.” (4_DemoA1-Rebuilding-Regular-Expressions.txt)
 

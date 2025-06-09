@@ -8,11 +8,11 @@ B. Word boundary
 C. Uppercase only  
 D. Blank space  
 
-2. **(Medium, Select all that apply):** Which regular expression elements are recommended for matching the mailbox part of an email address in the demos?  
+2. **(Medium, Select all that apply):** Which regular expression elements are recommended for matching the mailbox part of an email address ("robbie.moon" in "robbie.moon@gatech.edu") in the demos?  
 A. [a-z0-9._]+  
 B. \d+  
 C. [A-Z]  
-D. [a-z0-9\._]+  
+D. [a-z0-9\\._]+  
 
 3. **(Hard)** Why are hyphens typically excluded from the mailbox group in the email address regex presented?  
 A. They are not allowed in any email address  
@@ -52,14 +52,14 @@ B. True if a match is found, False otherwise
 C. Always True  
 D. Only True if all groups are non-empty  
 
-9. **(Hard, Select all that apply):** In the email extraction demo, why might an address like “@twitter_handle” not be matched by the regular expression?  
+9. **(Hard):** In the email extraction demo, why might an address like “@twitter_handle” not be matched by the regular expression?  
 A. It is missing the mailbox part before the @  
 B. The domain part is incomplete  
 C. The suffix is missing or invalid  
 D. All of the above  
 
 10. **(Hard)** Why is a raw string (e.g., `r"pattern"`) often used when defining regex patterns in Python?  
-A. It allows Python to parse special characters  
+A. It allows Python to parse mixed data types  
 B. It prevents Python from interpreting backslashes  
 C. It changes the regex to case-insensitive  
 D. It enables multi-line matching  

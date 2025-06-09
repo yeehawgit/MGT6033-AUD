@@ -84,7 +84,7 @@ B. value_counts()
 C. sort_values()  
 D. count()  
 
-14. **(Hard, Select all that apply):** What steps are necessary to analyze the hour of day when most emails were sent?  
+14. **(Hard, Select all that apply):** What steps did Robbie use to analyze the hour of day when most emails were sent?  
 A. Convert the 'timestamp' column to UTC datetime  
 B. Use `.dt.hour` to extract the hour  
 C. Use `value_counts()` to count occurrences  
@@ -104,7 +104,7 @@ B. str.contains()
 C. str.replace()  
 D. str.upper()  
 
-17. **(Medium, Select all that apply):** What is the purpose of searching for executive last names (e.g., 'lay', 'skilling', 'fastow') in the 'from_email' column?  
+17. **(Medium, Select all that apply):** What is the purpose of searching for executive last names (e.g., 'lay', 'skilling', 'fastow') in the 'from_email' column using `str.contains()` and `value_counts()`?  
 A. To identify emails sent by key Enron executives  
 B. To filter emails for legal review  
 C. To count the number of emails mentioning executives  
