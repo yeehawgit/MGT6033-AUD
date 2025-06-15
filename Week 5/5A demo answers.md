@@ -18,7 +18,7 @@ Verbatim Quote: “LDA Requires these integer word counts.” (5_DemoA2-Preproce
 Explanation: ngram_range=(1,2) includes unigrams and bigrams, capturing more context.  
 Verbatim Quote: “I'm going to consider bigrams and single words here.” (5_DemoA2-Preprocessing-Feature-Extraction.txt)
 
-5. **Correct Answer:** A  
+5. **Correct Answer:** C  
 Explanation: NumPy arrays allow fast indexing and subset selection for top words.  
 Verbatim Quote: “I'm just going to convert this to a numpy array, which is why I wrap it in this numpy command.” (5_DemoA5-Exploring-Topics-with-Topic-Word-Matrix.txt)
 
@@ -32,7 +32,7 @@ Verbatim Quote: “The first is components. That's the most important one, that'
 Explanation: Alpha and beta are Dirichlet priors controlling topic and word distributions.  
 Verbatim Quote: “doc_topic_prior and topic_word_prior, those are Alpha and Beta from the slides. So those are the two DLA priors. They govern how the generative process is assumed to work.” (5_DemoA3-LDA-with-sklearn.txt)
 
-8. **Correct Answer:** B  
+8. **Correct Answer:** D  
 Explanation: Each row is the probability distribution of topics for a document.  
 Verbatim Quote: “each one of these numbers actually tells you the likelihood that the topic is in this document.” (5_DemoA4-Exploring-the-Topic-Document-Matrix.txt)
 
@@ -40,7 +40,7 @@ Verbatim Quote: “each one of these numbers actually tells you the likelihood t
 Explanation: Thresholding converts probabilities to binary, identifies relevant topics, and reduces noise.  
 Verbatim Quote: “I'm going to set this threshold equal to 10% to 0.10... what I've done here is converted my matrix into, instead of probabilities, it's now going to be a bunch of ones and zeros.” (5_DemoA4-Exploring-the-Topic-Document-Matrix.txt)
 
-10. **Correct Answer:** B  
+10. **Correct Answer:** C  
 Explanation: The average is about 1.5 topics per document at a 0.10 threshold.  
 Verbatim Quote: “how many topics on average are there in each document? About 1.5.” (5_DemoA4-Exploring-the-Topic-Document-Matrix.txt)
 
@@ -50,7 +50,7 @@ Verbatim Quote: “how many topics on average are there in each document? About 
 Explanation: The shape is (100, 1000): 100 topics by 1000 words.  
 Verbatim Quote: “we see it is 100 topics. That's the rows by 1,000 words, right?” (5_DemoA5-Exploring-Topics-with-Topic-Word-Matrix.txt)
 
-12. **Correct Answers:** A, B  
+12. **Correct Answers:** B, D  
 Explanation: Use argsort to find top indices, then map to words using the vocabulary.  
 Verbatim Quote: “We just have to find the largest values in each of these rows... use again, what does argsort do? ... map indices to words using the vocabulary array.” (5_DemoA5-Exploring-Topics-with-Topic-Word-Matrix.txt)
 
@@ -62,13 +62,13 @@ Verbatim Quote: “this is not probabilistic. Right before we had nice probabili
 Explanation: Coherent topics have semantically related words that reflect a theme and often co-occur.  
 Verbatim Quote: “the words do seem coherent or the topics seem coherent. The words seem like they belong together, which can give an indication that we're doing a reasonably good job of identifying meaningful topics.” (5_DemoA5-Exploring-Topics-with-Topic-Word-Matrix.txt)
 
-15. **Correct Answer:** A  
-Explanation: The word intrusion task tests if humans can spot an unrelated word among top topic words.  
-Verbatim Quote: “the main purpose of the 'word intrusion' task... is to test if humans can spot an unrelated word among top topic words.” (5_DemoA6-Evaluating-Model-Topic-Quality.txt)
+15. **Correct Answer:** D  
+Explanation: `[::-1]` reverses the order of any list. 
+You should know this.
 
 ## Section 4: Model Evaluation and Tuning
 
-16. **Correct Answer:** A  
+16. **Correct Answer:** C  
 Explanation: Perplexity measures model complexity and fit.  
 Verbatim Quote: “You can access or you can estimate perplexity with the LDA model with this perplexity method.” (5_DemoA6-Evaluating-Model-Topic-Quality.txt)
 
