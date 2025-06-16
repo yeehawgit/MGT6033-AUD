@@ -9,35 +9,35 @@ C. HashingVectorizer
 D. DictVectorizer  
 
 2. **(Medium) Select all that apply:** What are the key parameters set for the TfidfVectorizer in this demo?  
-A. token_pattern = r'\b[a-zA-Z]{3,}\b'  
-B. stop_words includes custom tokens like "xxxx"  
-C. ngram_range = (1,2)  
-D. max_features = 1000  
-E. use_idf = False  
+A. `token_pattern = r'\b[a-zA-Z]{3,}\b'`  
+B. `stop_words` includes custom tokens like "xxxx"  
+C. `ngram_range = (1,2)`  
+D. `max_features = 1000`  
+E. `use_idf = False`  
 
 3. **(Medium)** Why is it acceptable to use TF-IDF weighting for clustering but not for LDA topic modeling?  
-A. Clustering algorithms do not require integer counts  
-B. LDA requires integer word counts for probabilistic modeling  
+A. Clustering only works with binary features  
+B. LDA requires nonzero word counts for probabilistic modeling  
 C. TF-IDF always improves LDA  
-D. Clustering only works with binary features  
+D. Clustering algorithms do not require integer counts  
 
 4. **(Hard) Select all that apply:** What are the main challenges of clustering high-dimensional textual data?  
-A. Curse of dimensionality  
+A. Lack of stopword removal  
 B. Sparsity of data  
 C. Scale differences between features  
-D. Lack of stopword removal  
+D. Curse of dimensionality  
 
 5. **(Hard)** What is the effect of standardizing features before clustering?  
-A. Each feature has mean zero and standard deviation one  
+A. The features are become more interpretable and accurate  
 B. All features are converted to binary  
-C. The number of clusters increases  
+C. Each feature has mean zero and standard deviation one  
 D. The DTM becomes denser  
 
 ## Section 2: K-means Clustering and Cluster Evaluation
 
 6. **(Easy)** What is the primary parameter that must be set when fitting a K-means model?  
-A. Number of clusters (n_clusters)  
-B. Distance metric  
+A. Distance metric  
+B. Number of clusters (`n_clusters`)  
 C. Number of features  
 D. Batch size  
 
@@ -48,10 +48,10 @@ C. Examining the most and least populous clusters
 D. Counting the number of unique words  
 
 8. **(Medium)** What does the silhouette score measure in clustering evaluation?  
-A. How well each point fits within its assigned cluster compared to others  
-B. The number of clusters  
-C. The average word frequency  
-D. The number of features per cluster  
+A. The average similarity between each cluster and its most similar cluster  
+B. The accuracy of each point assignment in each cluster  
+C. The within-cluster sum of squares  
+D. How well each point fits within its assigned cluster compared to others  
 
 9. **(Hard) Select all that apply:** Which methods are used to interpret the meaning of clusters in K-means?  
 A. Examining most prevalent words in each cluster  
@@ -68,42 +68,42 @@ D. To increase the number of clusters
 ## Section 3: Dimension Reduction and PCA
 
 11. **(Easy)** What is the primary purpose of applying PCA before clustering?  
-A. Reduce the number of features while retaining most variance  
-B. Increase the number of clusters  
-C. Remove all stopwords  
+A. Makes the data more sparse and therefore increases computational efficiency  
+B. Selects the most relevant features for analysis  
+C. Reduce the number of features while retaining most variance  
 D. Normalize the DTM  
 
 12. **(Medium) Select all that apply:** What are common criteria for selecting the number of principal components to retain in PCA?  
 A. Eigenvalues greater than 1  
 B. Cumulative explained variance threshold (e.g., 75%)  
-C. Fixed number of components  
-D. Minimum word frequency  
+C. Minimum word frequency  
+D. Fixed number of components  
 
 13. **(Medium)** What is the effect of standardizing the PCA-transformed matrix before clustering?  
-A. Each component has mean zero and standard deviation one  
+A. All features are converted to binary  
 B. The number of clusters is fixed  
-C. All features are converted to binary  
+C. Each component has mean zero and standard deviation one  
 D. The DTM becomes sparser  
 
-14. **(Hard) Select all that apply:** What information can be obtained from the explained_variance_ratio_ attribute in sklearn’s PCA?  
+14. **(Hard) Select all that apply:** What information can be obtained from the `explained_variance_ratio_` attribute in sklearn’s PCA?  
 A. Proportion of variance explained by each component  
 B. Cumulative variance explained  
 C. Which components to retain  
 D. The number of clusters  
 
 15. **(Hard)** Why might you want to retain principal components explaining up to 75% of variance?  
-A. To balance dimensionality reduction with information retention  
-B. To guarantee perfect clustering  
+A. To reduce the size of data by 75%  
+B. To balance dimensionality reduction with information retention  
 C. To maximize the number of clusters  
 D. To remove all rare words  
 
 ## Section 4: HDBSCAN, UMAP, and Advanced Clustering
 
 16. **(Easy)** What does HDBSCAN label as “-1” in its cluster assignments?  
-A. Noise points  
+A. The last cluster  
 B. The largest cluster  
 C. Outliers only in PCA  
-D. The first cluster  
+D. Noise points  
 
 17. **(Medium) Select all that apply:** What are the key parameters for tuning HDBSCAN?  
 A. cluster_selection_method  
@@ -113,8 +113,8 @@ D. cluster_selection_epsilon
 E. n_init  
 
 18. **(Medium)** Why does HDBSCAN often classify a large percentage of points as noise in high-dimensional data?  
-A. High-dimensional data is sparse, so many points appear unique  
-B. HDBSCAN only works with binary features  
+A. HDBSCAN only works with binary features  
+B. High-dimensional data is sparse, so many points appear unique  
 C. It requires integer counts  
 D. It always produces balanced clusters  
 
